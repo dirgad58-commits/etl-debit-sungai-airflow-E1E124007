@@ -1,0 +1,245 @@
+{
+  "target": "debit_besok",
+  "transformasi_target": "model memprediksi dlog = log1p(debit_besok) - log1p(debit_hari_ini); debit_besok = expm1(log1p(debit_hari_ini) + dlog)",
+  "fitur_urut": [
+    "log_debit_t0",
+    "dlog_1",
+    "dlog_3",
+    "dlog_7",
+    "dlog_mean7",
+    "hujan_t0",
+    "hujan_lag1",
+    "hujan_lag2",
+    "hujan_lag3",
+    "hujan_sum3",
+    "hujan_sum7",
+    "bulan_sin",
+    "bulan_cos",
+    "kota_Banda Aceh",
+    "kota_Bandung",
+    "kota_Banjarmasin",
+    "kota_Bekasi",
+    "kota_Jakarta",
+    "kota_Jambi",
+    "kota_Kendari",
+    "kota_Makassar",
+    "kota_Manado",
+    "kota_Mataram",
+    "kota_Medan",
+    "kota_Merauke",
+    "kota_Padang",
+    "kota_Palangka Raya",
+    "kota_Palembang",
+    "kota_Palu",
+    "kota_Pekanbaru",
+    "kota_Pontianak",
+    "kota_Samarinda",
+    "kota_Semarang",
+    "kota_Surakarta",
+    "kota_Yogyakarta"
+  ],
+  "fitur_numerik": [
+    "log_debit_t0",
+    "dlog_1",
+    "dlog_3",
+    "dlog_7",
+    "dlog_mean7",
+    "hujan_t0",
+    "hujan_lag1",
+    "hujan_lag2",
+    "hujan_lag3",
+    "hujan_sum3",
+    "hujan_sum7",
+    "bulan_sin",
+    "bulan_cos"
+  ],
+  "daftar_kota": [
+    "Banda Aceh",
+    "Bandung",
+    "Banjarmasin",
+    "Bekasi",
+    "Jakarta",
+    "Jambi",
+    "Kendari",
+    "Makassar",
+    "Manado",
+    "Mataram",
+    "Medan",
+    "Merauke",
+    "Padang",
+    "Palangka Raya",
+    "Palembang",
+    "Palu",
+    "Pekanbaru",
+    "Pontianak",
+    "Samarinda",
+    "Semarang",
+    "Surakarta",
+    "Yogyakarta"
+  ],
+  "ambang_per_kota": {
+    "Banda Aceh": {
+      "waspada_p75": 56.675,
+      "siaga_p90": 139.216,
+      "awas_p95": 198.944
+    },
+    "Bandung": {
+      "waspada_p75": 5.675,
+      "siaga_p90": 8.212,
+      "awas_p95": 10.222
+    },
+    "Banjarmasin": {
+      "waspada_p75": 241.1,
+      "siaga_p90": 294.596,
+      "awas_p95": 347.303
+    },
+    "Bekasi": {
+      "waspada_p75": 40.57,
+      "siaga_p90": 52.174,
+      "awas_p95": 57.3205
+    },
+    "Jakarta": {
+      "waspada_p75": 48.0075,
+      "siaga_p90": 57.438,
+      "awas_p95": 67.4315
+    },
+    "Jambi": {
+      "waspada_p75": 1.81,
+      "siaga_p90": 2.274,
+      "awas_p95": 2.527
+    },
+    "Kendari": {
+      "waspada_p75": 42.1,
+      "siaga_p90": 51.192,
+      "awas_p95": 56.666
+    },
+    "Makassar": {
+      "waspada_p75": 36.625,
+      "siaga_p90": 44.286,
+      "awas_p95": 49.849
+    },
+    "Manado": {
+      "waspada_p75": 40.98,
+      "siaga_p90": 51.456,
+      "awas_p95": 61.019
+    },
+    "Mataram": {
+      "waspada_p75": 19.065,
+      "siaga_p90": 21.96,
+      "awas_p95": 25.294
+    },
+    "Medan": {
+      "waspada_p75": 7.65,
+      "siaga_p90": 9.684,
+      "awas_p95": 12.249
+    },
+    "Merauke": {
+      "waspada_p75": 527.48,
+      "siaga_p90": 683.546,
+      "awas_p95": 851.513
+    },
+    "Padang": {
+      "waspada_p75": 16.1,
+      "siaga_p90": 31.858,
+      "awas_p95": 47.715
+    },
+    "Palangka Raya": {
+      "waspada_p75": 883.1,
+      "siaga_p90": 1074.974,
+      "awas_p95": 1125.682
+    },
+    "Palembang": {
+      "waspada_p75": 2.24,
+      "siaga_p90": 2.806,
+      "awas_p95": 3.31
+    },
+    "Palu": {
+      "waspada_p75": 5.76,
+      "siaga_p90": 10.224,
+      "awas_p95": 12.46
+    },
+    "Pekanbaru": {
+      "waspada_p75": 251.64,
+      "siaga_p90": 406.758,
+      "awas_p95": 474.121
+    },
+    "Pontianak": {
+      "waspada_p75": 535.1075,
+      "siaga_p90": 627.06,
+      "awas_p95": 682.6745
+    },
+    "Samarinda": {
+      "waspada_p75": 19.325,
+      "siaga_p90": 22.315,
+      "awas_p95": 23.83
+    },
+    "Semarang": {
+      "waspada_p75": 15.19,
+      "siaga_p90": 17.825,
+      "awas_p95": 19.9825
+    },
+    "Surakarta": {
+      "waspada_p75": 284.76,
+      "siaga_p90": 347.98,
+      "awas_p95": 385.465
+    },
+    "Yogyakarta": {
+      "waspada_p75": 35.6,
+      "siaga_p90": 45.45,
+      "awas_p95": 51.483
+    }
+  },
+  "metrik_uji": {
+    "GBR": {
+      "MAE": 1.8519,
+      "RMSE": 7.2197,
+      "R2": 0.9244
+    },
+    "Baseline": {
+      "MAE": 2.0204,
+      "RMSE": 7.892,
+      "R2": 0.9096
+    },
+    "recall_siaga": 0.47058823529411764
+  },
+  "feature_importance": {
+    "hujan_t0": 0.22452131314972096,
+    "dlog_1": 0.1726797389719283,
+    "log_debit_t0": 0.1266547529910268,
+    "dlog_7": 0.09090508535056772,
+    "kota_Banda Aceh": 0.08047976584037625,
+    "dlog_3": 0.07986420595592655,
+    "dlog_mean7": 0.048792336695950296,
+    "hujan_lag1": 0.028267405161674003,
+    "hujan_sum7": 0.025769465490185953,
+    "hujan_lag3": 0.02400807149230772,
+    "hujan_lag2": 0.021618121060174328,
+    "hujan_sum3": 0.016571770228098377,
+    "bulan_sin": 0.015499155359069374,
+    "kota_Jambi": 0.013713578125830036,
+    "kota_Palembang": 0.011483921089019074,
+    "kota_Pekanbaru": 0.005547682908175136,
+    "kota_Jakarta": 0.0041176003310689985,
+    "kota_Bandung": 0.0028197396365367815,
+    "bulan_cos": 0.0026460707178306017,
+    "kota_Palu": 0.00154617585593289,
+    "kota_Medan": 0.0010349900054927145,
+    "kota_Padang": 0.0006633753009625854,
+    "kota_Yogyakarta": 0.0005233418895326613,
+    "kota_Semarang": 0.0002723363926118679,
+    "kota_Bekasi": 0.0,
+    "kota_Banjarmasin": 0.0,
+    "kota_Kendari": 0.0,
+    "kota_Palangka Raya": 0.0,
+    "kota_Merauke": 0.0,
+    "kota_Manado": 0.0,
+    "kota_Mataram": 0.0,
+    "kota_Makassar": 0.0,
+    "kota_Pontianak": 0.0,
+    "kota_Samarinda": 0.0,
+    "kota_Surakarta": 0.0
+  },
+  "tanggal_potong_split": "2026-07-30",
+  "tanggal_data_terakhir": "2026-10-09",
+  "catatan": "Fitur dibuat oleh buat_fitur(); dashboard wajib memakai logika sama. Satuan debit m3/s, hujan mm/hari."
+}
