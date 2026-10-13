@@ -1,0 +1,27 @@
+# Binary dan lokal Astro CLI
+astro.exe
+.astro/
+airflow.db
+airflow.cfg
+
+# Python cache & virtualenv
+__pycache__/
+*.py[cod]
+*.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+
+# Kredensial dan variabel lokal
+.env
+.env.*
+secrets.toml
+
+# Editor & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

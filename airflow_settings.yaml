@@ -1,0 +1,9 @@
+airflow:
+  connections:
+    - conn_id: mysql-local
+      conn_type: mysql
+      conn_host: host.docker.internal
+      conn_schema: banjir_db
+      conn_login: root
+      conn_password: root
+      conn_port: 3306
